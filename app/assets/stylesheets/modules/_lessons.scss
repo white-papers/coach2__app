@@ -1,0 +1,128 @@
+$base-color: white;
+$main-color: #b3d0d7;
+$accent-color: #82aaaa;
+
+* {
+  box-sizing: border-box; 
+  font-family: serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: $base-color;
+  .header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid $main-color;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    background-color: $base-color;
+    &__navi {
+      display: flex;
+      padding: 0 20px;
+      li {
+        display: inline-block;
+        line-height: 50px;
+        margin-right: 20px;
+        .icon {
+          color: $accent-color;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    &__user-show {
+      margin-right: 20px;
+      line-height: 50px;
+      .icon {
+        color: $accent-color;
+        display: inline-block;
+        margin-right: 3px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+  .cotentes {
+    width: 100%;
+    height: calc(100vh - 50px);
+    margin: 0 auto;
+    padding-top: 50px;
+    .page-title {
+      width: 100%;
+      height: 300px;
+      text-align: center;
+      font-size: 50px;
+      h1 {
+        line-height: 300px;
+        font-family: cursive;
+        opacity: 0.7;
+      }
+    }
+    .lessons {
+      width: 80%;
+      background-color: $base-color;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .lesson {
+        width: 40%;
+        height: 400px;
+        border: 2px solid $main-color;
+        margin-bottom: 50px;
+        border-radius: 3px;
+        box-shadow: 3px 3px $main-color;
+        background-color: rgb(250, 250, 250);
+        &__top {
+          width: 100%;
+          height: 100px;
+          text-align: center;
+          padding-top: 25px;
+          border-bottom: 2px solid $main-color;
+          p {
+            font-size: 20px;
+            padding-top: 3px;
+          }
+        }
+        &__theme {
+          height: 50px;
+          line-height: 50px;
+          padding-left: 1em;
+          border-bottom: 1px solid $main-color;
+          cursor: pointer;
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .form {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 10;
+    height: 30px;
+    width: 20%;
+    background-color: $accent-color;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    .image {
+      margin-right: 10px;
+    }
+  }
+}
