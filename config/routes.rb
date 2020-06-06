@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'lessons/index'
-
+  devise_for :users
   root "lessons#index"
+  resources :users, only: [:edit, :update]
 end

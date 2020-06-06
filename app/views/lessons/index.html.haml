@@ -11,9 +11,9 @@
             = icon('fa', 'search', class: 'icon')
             キーワード検索
     .header__user-show
-      = link_to '#' do
+      = link_to edit_user_path(current_user) do
         = icon('fa', 'user-circle', class: 'icon')
-        Shuichi Kitaoka
+        = current_user.name
   .cotentes
     .page-title
       %h1 Coaching Curriculum
