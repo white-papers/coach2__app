@@ -2,11 +2,11 @@
   .header
     .header__navi
       %ul
-        %li 
-          = link_to '#' do
+        %li.header__navi--hover
+          = link_to root_path do
             = icon('fa', 'book', class: 'icon')
             コース一覧
-        %li 
+        %li.header__navi--hover
           = link_to '#' do
             = icon('fa', 'search', class: 'icon')
             キーワード検索
@@ -16,7 +16,7 @@
         = current_user.name
   .cotentes
     .page-title
-      %h1 Coaching Curriculum
+      %h1#page-title Coaching Curriculum
     .lessons
       .lesson
         .lesson__top
@@ -129,8 +129,19 @@
         .lesson__theme
           = link_to '#' do
             兼ね備えるべき意識と責任感                                               
-  .form
+  .form#question-box
     .image
       = icon('fa', 'edit', class: 'icon')
     .text 
-      %h3 質問ボックス
+      %h3 質問フォーム
+    .question-modal#question-modal
+      .modal
+        .close-modal
+          = icon('fa','fa-2x', class: 'fa-times')
+        .question-form
+          %h2 質問フォーム
+          %form(action="#")
+            %input.form-control{type: "text",placeholder: "メールアドレス"}/
+            %input.form-control{type: "text",placeholder: "質問テーマ"}/
+            %textarea.form-control{rows: "8",placeholder: "質問内容"}
+            %div#submit-btn 送信する
