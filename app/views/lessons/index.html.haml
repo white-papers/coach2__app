@@ -25,38 +25,47 @@
           .lesson__top__lesson-title
             %p コーチングとは？
         .lesson__theme
-          = link_to '#' do
-            コーチングの意味
+          = link_to "lessons/show" do
+            「コーチング」とは
+            %span（無料公開）
         .lesson__theme
           = link_to '#' do
-            コーチングの価値
+            コーチングの意味と価値
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
             コーチのマインドセット
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
             兼ね備えるべき意識と責任感
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            重要なスキルについて          
+            重要なスキルについて        
+            = icon('fa','lock', class: 'icon')  
       .lesson
         .lesson__top
           .lesson__top__lesson-number
             LESSON 2
           .lesson__top__lesson-title
-            %p コーチに求められるスキル
+            %p コーチングの基礎
         .lesson__theme
           = link_to '#' do
-            コーチングの意味
+            コーチングにおけるリソース
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            コーチングの価値
+            コーチングの仕組み
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            コーチのマインドセット
+            コーチングの効果
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            兼ね備えるべき意識と責任感 
+            コーチングが目指すもの
+            = icon('fa','lock', class: 'icon')
       .lesson
         .lesson__top
           .lesson__top__lesson-number
@@ -65,10 +74,12 @@
             %p コーチングの将来性
         .lesson__theme
           = link_to '#' do
-            コーチングの意味
+            コーチングの市場
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            コーチングの価値
+            コーチングのポジション
+            = icon('fa','lock', class: 'icon')
       .lesson
         .lesson__top
           .lesson__top__lesson-number
@@ -77,22 +88,28 @@
             %p コーチングを実践する
         .lesson__theme
           = link_to '#' do
-            コーチングの意味
+            コーチングが機能する条件
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            コーチングの価値
+            「認める」スキル
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            コーチのマインドセット
+            「聴く」スキル
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            兼ね備えるべき意識と責任感 
+            「質問する」スキル
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            重要なスキルについて
+            「フィーバックする」スキル
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            コーチングとティーチングの違い         
+            コーチングとティーチングの違い   
+            = icon('fa','lock', class: 'icon')      
       .lesson
         .lesson__top
           .lesson__top__lesson-number
@@ -101,16 +118,24 @@
             %p クライアントとの関係性
         .lesson__theme
           = link_to '#' do
-            コーチングの意味
+            言葉以外も聴く
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            コーチングの価値
+            自己基盤を固める
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            コーチのマインドセット
+            フィードバックを躊躇しない
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            兼ね備えるべき意識と責任感
+            直感に従い、簡潔に言語化する
+            = icon('fa','lock', class: 'icon')
+        .lesson__theme
+          = link_to '#' do
+            ラポールを意識して関係を構築する   
+            = icon('fa','lock', class: 'icon')
       .lesson
         .lesson__top
           .lesson__top__lesson-number
@@ -119,21 +144,25 @@
             %p いざ、コーチへ！
         .lesson__theme
           = link_to '#' do
-            コーチングの意味
+            フォローセッションについて
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            コーチングの価値
+            個人の取り組み
+            = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            コーチのマインドセット
+            スキルを定着させる方法    
+            = icon('fa','lock', class: 'icon') 
         .lesson__theme
           = link_to '#' do
-            兼ね備えるべき意識と責任感                                               
+            実践あるのみ          
+            = icon('fa','lock', class: 'icon')                          
   .form#question-box
     .image
       = icon('fa', 'edit', class: 'icon')
     .text 
-      %h3 質問フォーム
+      %h3 クリックで質問フォームを表示
     .question-modal#question-modal
       .modal
         .close-modal

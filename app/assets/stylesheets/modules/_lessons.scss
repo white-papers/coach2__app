@@ -1,4 +1,4 @@
-$base-color: white;
+$base-color: rgb(245, 245, 245);
 $main-color: #b3d0d7;
 $accent-color: #82aaaa;
 
@@ -9,7 +9,6 @@ $accent-color: #82aaaa;
 
 .wrapper {
   width: 100%;
-  height: 100vh;
   background-color: $base-color;
   .header {
     width: 100%;
@@ -19,7 +18,7 @@ $accent-color: #82aaaa;
     justify-content: space-between;
     position: fixed;
     z-index: 10;
-    background-color: $base-color;
+    background-color: white;
     &__navi {
       display: flex;
       padding: 0 10px;
@@ -28,6 +27,7 @@ $accent-color: #82aaaa;
         line-height: 50px;
         padding: 0 10px;
         border-radius: 15px;
+        height: 99%;
         .icon {
           color: $accent-color;
         }
@@ -57,22 +57,23 @@ $accent-color: #82aaaa;
   }
   .cotentes {
     width: 100%;
-    height: calc(100vh - 50px);
     margin: 0 auto;
     padding-top: 50px;
     .page-title {
-      background-image: url("../../images/hero-img.png");
+      background-image: image-url("night.jpg");
       background-size: cover;
-      background-color: $accent-color;
       width: 100%;
-      height: 300px;
+      height: 350px;
       text-align: center;
       font-size: 50px;
       margin-bottom: 60px;
+      letter-spacing: 5px;
+      color: white;
       h1 {
-        line-height: 300px;
+        line-height: 350px;
         font-family: cursive;
         opacity: 0.7;
+        display: none;
       }
     }
     .lessons {
@@ -89,7 +90,7 @@ $accent-color: #82aaaa;
         margin-bottom: 50px;
         border-radius: 3px;
         box-shadow: 3px 3px $main-color;
-        background-color: rgb(250, 250, 250);
+        background-color: white;
         &__top {
           width: 100%;
           height: 100px;
@@ -110,6 +111,19 @@ $accent-color: #82aaaa;
           a {
             text-decoration: none;
             color: black;
+            display: block;
+            .icon {
+              float: right;
+              line-height: 50px;
+              margin-right: 15px;
+              opacity: 0.7;
+            }
+            span{
+              color: red;
+              display: inline-block;
+              float: right;
+              margin-right: 5px;
+            }
           }
         }
       }
@@ -121,7 +135,7 @@ $accent-color: #82aaaa;
     right: 20px;
     z-index: 10;
     height: 30px;
-    width: 20%;
+    width: 35%;
     background-color: $accent-color;
     line-height: 30px;
     text-align: center;
@@ -206,6 +220,74 @@ $accent-color: #82aaaa;
             }
           }
         }
+      }
+    }
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 100px;
+    background-color: $base-color;
+    .top-main {
+      height: 400px;
+      width: 100%;
+      background-image: image-url("memo.jpg");
+      background-size: cover;
+      &__section-title {
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        line-height: 400px;
+      }
+    }
+    .curriculums {
+      width: 100%;
+      &__contents-box {
+        width: 100%;
+        background-color: white;
+        margin-top: 15px;
+        padding: 20px 30px;
+        font-size: 20px;
+        &__primary-sentence {
+          h2 {
+            border-bottom: 1px solid $accent-color;
+            font-weight: bold;
+            font-size: 36px;
+            padding-bottom: 5px;
+            margin-bottom: 50px;
+            padding-top: 10px;
+          }
+          h3 {
+            font-weight: bold;
+            margin-bottom: 40px;
+          }
+          p {
+            margin-bottom: 80px;
+            line-height: 40px;
+          }  
+          .red {
+            color: red;
+          }
+        }
+      &__secondary-sentence {
+        margin-bottom: 20px;
+        line-height: 40px;
+        .red {
+          color: red;
+          margin: 50px 0;
+        }
+        .definition {
+          background-color: $main-color;
+          padding: 50px 0;
+          width: 90%;
+          margin: 70px auto;
+          text-align: center;
+          .English {
+            margin-top: 40px;
+            font-size: 18px;
+          }
+        }
+      }
       }
     }
   }
