@@ -1,6 +1,8 @@
 $(function() {
-  
-  $('#page-title').css('display', 'none');
+
+  $('#page-title').hover(function(){
+      $(this).css('background-color', '#558585');
+    });
 
   $('#page-title').hover(
     function() {
@@ -13,12 +15,6 @@ $(function() {
         'font-size':'50px'
       },1000);
     },2000
-  );
-
-  $('#page-title').hover(
-    function() {
-      $(this).css('background-color', '#b3d0d7');
-    }
   );
 
   $('.page-title').hover(

@@ -1,0 +1,76 @@
+.wrapper 
+  .header
+    .header__navi
+      %ul
+        %li.header__navi--hover
+          = link_to root_path do
+            = icon('fa', 'book', class: 'icon')
+            コース一覧
+        %li.header__navi--hover
+          = link_to '#' do
+            = icon('fa', 'search', class: 'icon')
+            キーワード検索
+    .header__user-show
+      = link_to edit_user_path(current_user) do
+        = icon('fa', 'user-circle', class: 'icon')
+        = current_user.name
+  .container
+    .top-main
+      %h1.top-main__section-title
+        「コーチング」とは
+    .curriculums
+      .curriculums__contents-box
+        .curriculums__contents-box__primary-sentence
+          %h2 この章の目標
+          %h3 推定完了時間: 10分 〜 15分
+        .curriculums__contents-box__secondary-sentence
+          %p 1. コーチングとは何かを学ぶ
+          %p 2. コーチングを学ぶメリットやスキル上達への近道などを学ぶ
+      .curriculums__contents-box
+        .curriculums__contents-box__primary-sentence
+          %h2 はじめに
+          %p  この章では、これからコーチング初心者の方がコーチングを学ぶにあたり、コーチングとは何かを簡単に説明します。
+        .curriculums__contents-box__primary-sentence
+          %h2 「コーチング」とは
+          %p.red  コーチングとは、パフォーマンス向上のために、対話によってクライアントを勇気づけ、気づきや自発的行動を促すコミュニケーションスキルのことです。
+        .curriculums__contents-box__secondary-sentence 
+          %p  なお、クライアントとは、コーチのサポートを受ける人のことをいいます。
+          %p  コーチはクライアントのパフォーマンスを上げるために、対話によってクライアントから気づきを引き出すことが求められます。
+          %p  クライアントがその持てる能力を最大限に発揮して自発的にアクションを起こすことができるようにサポートするのです。
+          %p  クライアント側に軸足を置いて言い換えると、コーチングとは次のように言い換えることができます。
+          %p.red  すなわち、本人が望むことを実行し、理想の自分になるための具体的なアクションを促すコミュニケーション技術ともいうことができます。
+          %p  自身が本当に「やりたいこと」を発見し、「なりたい自分」になるためには、まずは本人がそれらに気づき、目標に向かって行動することが非常に重要となります。
+          %p  コーチングでは、クライアントの中にある「やりたいこと」や「なりたい自分」を最大限に尊重する姿勢が必要になります。
+          %p  クライアントは、「やりたいこと」・「なりたい自分」をコーチの巧みな質問により引き出してもらいます。
+          %p  そして、クライアント自身がそれらに気づき、具体的にイメージできるようにしていきます。
+          %p  自ら設定した目標を達成するためのモチベーションを高め、自発的な行動に落とし込んでいくのです。
+          %p  コーチは、クライアントがより高い目標を、より早く達成できるようにサポートします。
+          %p  世界最大級のコーチの国際組織である国際コーチ連盟（International Coach Federation）は、コーチングを次のように定義しています。
+          .definition
+            %p  コーチングとは、思考を刺激し続ける創造的なプロセスを通して、
+            %p  クライアントが自身の可能性を公私において最大化させるように、
+            %p  コーチとクライアントのパートナー関係を築くことである。
+            .English
+              %p  Coaching is partnering with clients in a thought-provoking and creative process
+              %p  that inspires them to maximize their personal and professional potential.
+          %p  この定義は、特にプロコーチが提供するコーチングをよく言い表しています。
+      .curriculums__contents-box
+        .curriculums__contents-box__primary-sentence
+          %h2 チャレンジしてみよう
+          %p  コーチングとは何か、自分の言葉でまとめてみましょう。
+  .form#question-box
+    .image
+      = icon('fa', 'edit', class: 'icon')
+    .text 
+      %h3 クリックで質問フォームを表示
+    .question-modal#question-modal
+      .modal
+        .close-modal
+          = icon('fa','fa-2x', class: 'fa-times')
+        .question-form
+          %h2 質問フォーム
+          %form(action="#")
+            %input.form-control{type: "text",placeholder: "メールアドレス"}/
+            %input.form-control{type: "text",placeholder: "質問テーマ"}/
+            %textarea.form-control{rows: "8",placeholder: "質問内容"}
+            %div#submit-btn 送信する
