@@ -2,6 +2,19 @@
   font-family: serif;
 }
 
+@media (max-width: 1050px) {
+  .account-page__inner {
+    width: 90%!important;
+  }
+  .account-page__inner--left, .account-page__inner--right {
+    width: 100%!important;
+  }
+  .btn {
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
+}
+
 .account-page {
   .account-page__inner {
     width: 980px;

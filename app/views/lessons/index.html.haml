@@ -6,9 +6,9 @@
           = link_to root_path do
             = icon('fa', 'book', class: 'icon')
             コース一覧
-        %li.header__navi--hover
+        -#%li.header__navi--hover
           = link_to '#' do
-            = icon('fa', 'search', class: 'icon')
+            = icon('fa', 'search', class: 'icon keyword')
             キーワード検索
     .header__user-show
       = link_to edit_user_path(current_user) do
@@ -17,6 +17,7 @@
   .cotentes
     .page-title
       %h1#page-title Coaching Curriculum
+      %h2.hide Coaching Curriculum
     .lessons
       .lesson
         .lesson__top
@@ -38,7 +39,7 @@
             = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            兼ね備えるべき意識と責任感
+            兼ね備えるべき責任感
             = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
@@ -108,7 +109,7 @@
             = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            コーチングとティーチングの違い   
+            ティーチングについて
             = icon('fa','lock', class: 'icon')      
       .lesson
         .lesson__top
@@ -130,11 +131,11 @@
             = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            直感に従い、簡潔に言語化する
+            直感に従って言語化する
             = icon('fa','lock', class: 'icon')
         .lesson__theme
           = link_to '#' do
-            ラポールを意識して関係を構築する   
+            良好な関係を構築する   
             = icon('fa','lock', class: 'icon')
       .lesson
         .lesson__top
