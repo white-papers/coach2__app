@@ -1,6 +1,4 @@
-# README
-
-Coaching.Curriculum
+# Coaching.Curriculum
 ====
 
 コーチングについて、より体系的に学びたい人に向けて作成いたしました。
