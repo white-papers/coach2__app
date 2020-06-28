@@ -27,7 +27,7 @@ $ cd coach2__app
 Twitter: @StrangeSpace27  
 Github: white-papers
 
-Shuichi Kitaoka
+__Shuichi Kitaoka__
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
