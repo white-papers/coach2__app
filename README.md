@@ -10,7 +10,7 @@
 $ git clone https://github.com/white-papers/coach2__app.git  
 $ cd coach2__app
 
-ユーザー登録をしていただくと、レッスン一覧ページに移遷することができるようになります。次に、閲覧したいレッスンをクリックしていただけると。詳細ページを閲覧することができます。
+ユーザー登録をしていただくと、レッスン一覧ページに移遷することができるようになります。次に、閲覧したいレッスンをクリックしていただくと、詳細ページを閲覧することができます。
 
 ## Contribution
 1. Fork it ( http://github.com//rbdock/fork )
