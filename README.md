@@ -39,28 +39,13 @@ ruby 2.5.1
 
 ## DEPENDENCIES
 byebug
-capistrano
-capistrano-bundler
-capistrano-rails
-capistrano-rbenv
-capistrano3-unicorn
-coffee-rails (~> 4.2)
-devise
-font-awesome-sass
-haml-rails
-jbuilder (~> 2.5)
-jquery-rails
-listen (~> 3.0.5)
-mysql2 (>= 0.3.18, < 0.6.0)
-puma (~> 3.0)
-rails (~> 5.0.7, >= 5.0.7.2)
-sass-rails (~> 5.0)
-spring
-spring-watcher-listen (~> 2.0.0)
-turbolinks (~> 5)
-tzinfo-data
-uglifier (>= 1.3.0)
-unicorn (= 5.4.1)
+capistrano  
+capistrano-bundler  
+capistrano-rails  
+jquery-rails  
+rails (~> 5.0.7)  
+spring  
+unicorn (= 5.4.1)  
 web-console (>= 3.3.0)
 
 ## System dependencies
