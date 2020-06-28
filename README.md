@@ -10,7 +10,7 @@ Coaching.Curriculum
 コーチングを学びたいといっても、市販の参考書を購入したり、スクールに通ったりと、様々な方法があります。しかし、コーチングを学ぶ上で、無視できない障壁があります。それは、高い学習費用です。本WEBアプリは、コーチングをより多くの人にお届けするため、リーズナブルなお値段で体系的に学びたいというニーズにお応えいたします。
 
 ## Usage
-$ git clone https://github.com/white-papers/coach2__app.git
+$ git clone https://github.com/white-papers/coach2__app.git  
 $ cd coach2__app
 
 ユーザー登録をしていただくと、レッスン一覧ページに移遷することができるようになります。次に、閲覧したいレッスンをクリックしていただけると。詳細ページを閲覧することができます。
@@ -27,7 +27,7 @@ $ cd coach2__app
 [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
 
 ## Author
-Twitter: @StrangeSpace27
+Twitter: @StrangeSpace27  
 Github: white-papers
 
 Shuichi Kitaoka
