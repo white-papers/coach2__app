@@ -1,0 +1,168 @@
+.wrapper {
+  width: 100%;
+  background-color: $base-color;
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 25px 0;
+    background-color: $base-color;
+    .top-main {
+      height: 400px;
+      width: 100%;
+      background-image: image-url("memo.jpg");
+      background-size: cover;
+      max-width: 1170px;
+      margin: 25px auto 0;
+      &__section-title {
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        line-height: 400px;
+      }
+    }
+    .curriculums {
+      width: 100%;
+      max-width: 1170px;
+      margin: 0 auto;
+      &__contents-box {
+        width: 100%;
+        background-color: white;
+        margin-top: 15px;
+        padding: 20px 30px;
+        font-size: 20px;
+        &__primary-sentence {
+          h2 {
+            border-bottom: 1px solid $accent-color;
+            font-weight: bold;
+            font-size: 36px;
+            padding-bottom: 5px;
+            margin-bottom: 50px;
+            padding-top: 10px;
+          }
+          h3 {
+            font-weight: bold;
+            margin-bottom: 40px;
+          }
+          p {
+            margin-bottom: 80px;
+            line-height: 40px;
+          }  
+          .red {
+            color: red;
+          }
+        }
+        &__secondary-sentence {
+          margin-bottom: 20px;
+          line-height: 40px;
+          .red {
+            color: red;
+            margin: 50px 0;
+          }
+          .definition {
+            background-color: $main-color;
+            padding: 50px 0;
+            width: 90%;
+            margin: 70px auto;
+            text-align: center;
+            .English {
+              margin-top: 40px;
+              font-size: 18px;
+            }
+          }
+        }
+        .submit-box {
+          display: block;
+          width: 200px;
+          padding: 14px 60px;
+          background-color: $accent-color;
+          border: none;
+          border-radius: 3px;
+          color: white;
+          margin:0 auto;
+          cursor: pointer;
+          text-align: center;
+          margin-bottom: 30px;
+          &:active {
+            position: relative;
+            top: 5px;
+          }
+          .submit-modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 100;
+            display: none;
+            .modal {
+              position: absolute;
+              top: 20%;
+              left: 20%;
+              background-color: #e6ecf0;
+              padding: 30px 0 40px;
+              border-radius: 10px;
+              width: 60%;
+              height: auto;
+              text-align: center;
+              .fa-times {
+                position: absolute;
+                top: 12px;
+                right: 12px;
+                color: rgba(128, 128, 128, 0.46);
+                cursor: pointer;
+                font-size: 30px;
+              }
+              .submit-form {
+                width: 100%;
+                h2 {
+                  color: #2b292c;
+                  letter-spacing: 1px;
+                  margin-bottom: 30px;
+                  font-weight: bold;
+                  font-size: 20px;
+                }
+                input {
+                  width: 70%;
+                  margin-bottom: 20px;
+                  font-size: 12px;
+                  padding: 12px 12px;
+                  border: 1px solid #d0d5d8;
+                  border-radius: 5px;
+                  font-size: 16px;
+                  display: inline-block;
+                }
+                textarea {
+                  width: 70%;
+                  margin-bottom: 20px;
+                  font-size: 12px;
+                  padding: 12px 12px;
+                  border: 1px solid #d0d5d8;
+                  border-radius: 5px;
+                  font-size: 16px;
+                  margin: 0 auto;
+                  display: block;
+                  margin-bottom: 30px;
+                }
+                #submit-btn {
+                  display: inline-block;
+                  padding: 14px 60px;
+                  background-color: $accent-color;
+                  border: none;
+                  border-radius: 3px;
+                  color: white;
+                  margin: 10px auto 0;
+                  cursor: pointer;
+                  &:active {
+                    position: relative;
+                    top: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
