@@ -106,9 +106,6 @@ $accent-color: #82aaaa;
       margin-bottom: 60px;
       letter-spacing: 5px;
       color: white;
-      .hide {
-        display: none;
-      }
       h1 {
         line-height: 350px;
         font-family: cursive;
@@ -260,78 +257,6 @@ $accent-color: #82aaaa;
             }
           }
         }
-      }
-    }
-  }
-  .container {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 50px;
-    background-color: $base-color;
-    .top-main {
-      height: 400px;
-      width: 100%;
-      background-image: image-url("memo.jpg");
-      background-size: cover;
-      max-width: 1170px;
-      margin: 0 auto;
-      &__section-title {
-        font-size: 50px;
-        color: white;
-        text-align: center;
-        line-height: 400px;
-      }
-    }
-    .curriculums {
-      width: 100%;
-      max-width: 1170px;
-      margin: 0 auto;
-      &__contents-box {
-        width: 100%;
-        background-color: white;
-        margin-top: 15px;
-        padding: 20px 30px;
-        font-size: 20px;
-        &__primary-sentence {
-          h2 {
-            border-bottom: 1px solid $accent-color;
-            font-weight: bold;
-            font-size: 36px;
-            padding-bottom: 5px;
-            margin-bottom: 50px;
-            padding-top: 10px;
-          }
-          h3 {
-            font-weight: bold;
-            margin-bottom: 40px;
-          }
-          p {
-            margin-bottom: 80px;
-            line-height: 40px;
-          }  
-          .red {
-            color: red;
-          }
-        }
-      &__secondary-sentence {
-        margin-bottom: 20px;
-        line-height: 40px;
-        .red {
-          color: red;
-          margin: 50px 0;
-        }
-        .definition {
-          background-color: $main-color;
-          padding: 50px 0;
-          width: 90%;
-          margin: 70px auto;
-          text-align: center;
-          .English {
-            margin-top: 40px;
-            font-size: 18px;
-          }
-        }
-      }
       }
     }
   }

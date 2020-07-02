@@ -58,6 +58,18 @@
         .curriculums__contents-box__primary-sentence
           %h2 チャレンジしてみよう
           %p  コーチングとは何か、自分の言葉でまとめてみましょう。
+        .submit-box#submit-box
+          提出する
+          .submit-modal#submit-modal
+            .modal
+              .close-modal#close-submit
+                = icon('fa','fa-2x', class: 'fa-times')
+              .submit-form
+                %h2 提出フォーム
+                %form(action="#")
+                  %input.form-control{type: "text",placeholder: "要約テーマ"}/
+                  %textarea.form-control{rows: "8",placeholder: "要約内容"}
+                  %div#submit-btn 送信する
   .form#question-box
     .image
       = icon('fa', 'edit', class: 'icon')
