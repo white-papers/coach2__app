@@ -38,7 +38,7 @@ Coaching.Curriculum
 ![DEMO](https://user-images.githubusercontent.com/60888549/86892817-b741de80-c13b-11ea-96b5-41541533b47a.jpg)
 
 ## アドレス
-http://54.95.23.196/
+176.32.64.56
 
 ## テストアカウントと手順
 [テスト用アカウント]  
