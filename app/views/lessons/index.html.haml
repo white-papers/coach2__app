@@ -11,6 +11,7 @@
             = icon('fa', 'search', class: 'icon keyword')
             キーワード検索
     .header__user-show
+      = breadcrumbs pretext: "You are here:",separator: " &rsaquo; "
       = link_to edit_user_path(current_user) do
         = icon('fa', 'user-circle', class: 'icon')
         = current_user.name

@@ -63,6 +63,8 @@ gem 'font-awesome-sass'
 
 gem 'devise'
 
+gem "gretel"
+
 group :production do
   gem 'unicorn', '5.4.1'
 end

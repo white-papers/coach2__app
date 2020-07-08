@@ -80,7 +80,7 @@ document.addEventListener("turbolinks:load", function() {
       $('#submit-modal').fadeOut();
     });
 
-    $('.header__user-show').hover(
+    $('#user-show').hover(
       function(){
         $(this).css('background-color', 'rgb(200, 200, 200, 0.5)');
       },
