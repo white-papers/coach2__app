@@ -76,20 +76,39 @@ $accent-color: #82aaaa;
         }
       }
     }
+    #user-show {
+      padding: 0 10px;
+      border-radius: 15px;
+    }
     &__user-show {
-      margin-right: 10px;
       line-height: 50px;
       padding: 0 10px;
       border-radius: 15px;
+      display: flex;
+      .breadcrums {
+        font-size: 12px;
+        display: inline-block;
+        display: flex;
+        margin-right: 10px;
+        line-height: 50px;
+        border-radius: 15px;
+        span {
+          display: block;
+        }
+      }
       .icon {
         color: $accent-color;
         display: inline-block;
         margin-right: 3px;
       }
       a {
+        margin-right: 5px;
         text-decoration: none;
         color: black;
         display: block;
+      }
+      span {
+        margin-left: 5px;
       }
     }
   }
