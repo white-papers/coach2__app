@@ -89,6 +89,15 @@ document.addEventListener("turbolinks:load", function() {
       },
     );
 
+    $('.user-name-top').hover(
+      function(){
+        $(this).css('background-color', 'rgb(200, 200, 200, 0.5)');
+      },
+      function(){
+        $(this).css('background-color', 'white');
+      },
+    );
+
     $('.header__navi--hover').hover(
       function(){
         $(this).css('background-color', 'rgb(200, 200, 200, 0.5)');

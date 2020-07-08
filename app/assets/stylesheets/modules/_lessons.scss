@@ -82,7 +82,7 @@ $accent-color: #82aaaa;
     }
     &__user-show {
       line-height: 50px;
-      padding: 0 10px;
+      padding: 0 5px;
       border-radius: 15px;
       display: flex;
       .breadcrums {
@@ -279,4 +279,9 @@ $accent-color: #82aaaa;
       }
     }
   }
+}
+
+.user-name-top {
+  padding: 0 10px;
+  border-radius: 15px;
 }
