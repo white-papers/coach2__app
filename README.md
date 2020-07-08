@@ -34,7 +34,7 @@ Coaching.Curriculum
 いくつかの学習サイトを参考にし、見やすいと感じた点を抽出して具体的に言語化しました。
 
 ## DEMO
-![コーチングトップページ](https://user-images.githubusercontent.com/60888549/86891192-66c98180-c139-11ea-81b2-b0afece48c0d.jpg)
+![DEMO](https://user-images.githubusercontent.com/60888549/86892817-b741de80-c13b-11ea-96b5-41541533b47a.jpg)
 
 ## アドレス
 http://54.95.23.196/
