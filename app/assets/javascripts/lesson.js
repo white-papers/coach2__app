@@ -54,6 +54,15 @@ document.addEventListener("turbolinks:load", function() {
       },
     );
 
+    $('#summery-btn').hover(
+      function(){
+        $(this).css('background-color', '#5caaaa');
+      },
+      function(){
+        $(this).css('background-color', '#82aaaa');
+      },
+    );
+
     $('#submit-box').hover(
       function(){
         $(this).css('background-color', '#5caaaa');
@@ -74,6 +83,14 @@ document.addEventListener("turbolinks:load", function() {
 
     $('.close-modal').click(function(){
       $('#question-modal').fadeOut();
+    });
+
+    $('#submit-btn').click(function(){
+      $('#question-modal').slideUp();
+    });
+
+    $('#summery-btn').click(function(){
+      $('#submit-modal').slideUp();
     });
 
     $('#close-submit').click(function(){
